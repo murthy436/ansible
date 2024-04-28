@@ -1,4 +1,4 @@
-- name: Installing nginx
+name: Installing nginx
   host: web
   become: yea
   task:
@@ -11,4 +11,3 @@
       name: nginx
       state:started
       enabled: yes
-      
