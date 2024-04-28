@@ -1,9 +1,9 @@
-name: Installing nginx
+-name: Installing nginx
   hosts: web
   become: yea
-  task:
+  tasks:
   - name: Install nginx
-    ansible.buitin.dnf:
+    ansible.builtin.dnf:
       name: nginx
       state: latest
   - name: start nginx
