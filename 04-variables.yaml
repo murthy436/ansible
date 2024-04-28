@@ -1,0 +1,6 @@
+- name: variables
+  hosts: localhost
+  tasks:
+    - name: Print some message
+      ansible.builin.debug:
+        msg: "Hi, i am krishna, and i am learning devops courese.this will complete in 120hrs"
