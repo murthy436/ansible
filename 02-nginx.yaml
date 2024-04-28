@@ -1,5 +1,5 @@
 name: Installing nginx
-  host: web
+  hosts: web
   become: yea
   task:
   - name: Install nginx
