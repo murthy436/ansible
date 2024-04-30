@@ -3,7 +3,7 @@
   vars: 
     Course: "devops"
     Student: "krishna"
-    Duration: "120hrs"
+    Duration: "120hrs" 
   tasks:
     - name: Print some message
       ansible.builtin.debug:

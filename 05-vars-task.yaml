@@ -1,0 +1,17 @@
+- name: variables
+  hosts: localhost
+  vars:
+    Course: "AWS"
+    Trainer: "Shiva"
+    Time: "4months"
+    Student: "Krishna"
+    Language: "Telugu"
+  tasks:
+    - name: print override information
+      vars:
+        Course: "DevOps"
+    ansible.builtin.debug:
+      msg: "Hi i am {{Student}}, I am learning {{Course}} subject with {{Trainer}} in the duration of {{Time}} in {{Language}} language"
+    - name: print normal information
+      ansible.buitin.debug:
+      msg: "Hi i am {{Student}}, I am learning {{Course}} subject with {{Trainer}} in the duration of {{Time}} in {{Language}} language"
