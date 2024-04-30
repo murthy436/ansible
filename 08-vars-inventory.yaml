@@ -1,0 +1,6 @@
+- name: Varibles form inventory
+  hosts: localhost
+  tasks:
+  - name: Print output
+    ansible.builtin.debug:
+      msg: "Hi i am {{Student}} from AP.I am learning {{Course}} with trainer {{trainer}} with duration of {{Duration}}."
