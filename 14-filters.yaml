@@ -50,4 +50,4 @@
   tasks:
   - name: print max and min
     ansible.builtin.debug:
-      msg: "Max number is: {{ numbers | max }} and Min numbers is: {{ numbers | min }}"
+      msg: "Max number is: {{ numbers | max }} and Min number is: {{ numbers | min }}"
