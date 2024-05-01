@@ -14,11 +14,11 @@
     ansible.builtin.debug:
       msg: " {{ message | upper }}"
 
-  - name: lower case
-    hosts: localhost
-    vars:
-      message: "HI, I am learning AWS"
-    tasks:
-    - name: convert in lower case
-      ansible.builtin.debug:
-        msg: "{{ message | lower }}"
+- name: lower case
+  hosts: localhost
+  vars:
+    message: "HI, I am learning AWS"
+  tasks:
+  - name: convert in lower case
+    ansible.builtin.debug:
+      msg: "{{ message | lower }}"
