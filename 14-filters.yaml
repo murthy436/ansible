@@ -51,3 +51,16 @@
   - name: print max and min
     ansible.builtin.debug:
       msg: "Max number is: {{ numbers | max }} and Min number is: {{ numbers | min }}"
+
+- name: convert disc to items
+  hosts: localhost
+  vars:
+    my_dict:
+      Course: DevOps with aws
+      Trainer: SivaKumar M
+      Duration: 4Months
+      Timings: 7am to 9am
+  tasks:
+  - name: print list before convert
+    ansible.builtin.debug:
+      msg: "Here is the list before convert: {{my_dict}}"
