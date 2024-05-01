@@ -4,14 +4,13 @@
   - name: checking number
     prompt: Please enter number
     private: no
-
   tasks:
-  - name: check number is lessthan 10
+  - name: check number is less than 10
     ansible.builtin.debug:
       msg: "Given number {{number}} is less than 10"
     when: number | int < 10
 
-  - name: check nunber is greaterthan 10
+  - name: check nunber is greater than 10
     ansible.builtin.debug:
-      msg: "Given number {{number}} is greaterthan 10"
+      msg: "Given number {{number}} is greater than 10"
     when: number | int >= 10
