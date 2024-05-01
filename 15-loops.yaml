@@ -3,7 +3,7 @@
   tasks:
   - name: print names
     ansible.builtin.debug:
-      msg: "Here is the list: {{items}}"
+      msg: "Here is the list: {{item}}"
     loop:
     - mysql
     - nginx
