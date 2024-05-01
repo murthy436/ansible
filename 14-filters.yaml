@@ -68,3 +68,7 @@
   - name: print list after conver
     ansible.builtin.debug:
       msg: "Hers is the list after conver: {{ my_dict | dict2items }}"
+
+  - name: print revers order
+    ansible.builtin.debug:
+      msg: "Reversal order: {{ my_dict | items2dict }}"
