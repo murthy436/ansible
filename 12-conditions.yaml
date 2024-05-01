@@ -9,7 +9,7 @@
   
   - name: print user info
     ansible.builtin.debug:
-      msg: "user id: {{USER}}"
+      msg: "user info: {{USER}}"
 
   - name: create user
     ansible.builtin.command: useradd expense
